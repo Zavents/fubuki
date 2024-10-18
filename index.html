@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Shirakami Fubuki </title>
+  <!-- author -->
+  <meta name="author" content="FOOBER">
+  <meta name="description" content="Shirakami Fubuki Website  ! ">
+  <!-- icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/shirakami-fubuki-new-model-reveal-removebg-preview.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/shirakami-fubuki-new-model-reveal-removebg-preview.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="./public/css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+  <div class="">
+          
+<section class="px-4 lg:px-10 bg-gray-800 " x-data="{ mobileNavOpen: false }">
+  <nav class="relative flex justify-between items-center py-5">
+    <a class="text-2xl text-white font-bold" href="#">
+      <img class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
+    </a>
+    <div class="lg:hidden">
+      <button class="p-2" x-on:click="mobileNavOpen = !mobileNavOpen">
+        <svg class="w-10 h-3" width="39" height="13" viewbox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="39" height="2" rx="1" fill="#C4C4C4"></rect><rect x="19" y="11" width="20" height="2" rx="1" fill="#C4C4C4"></rect></svg>
+      </button>
+    </div>
+    <div class="hidden lg:block ml-auto mr-16">
+      <ul class="flex items-center text-white space-x-10">
+        <li><a class="text-white font-bold text-lg" href="#">Home</a></li>
+        <span>
+          <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+        </span>
+        <li><a class="text-white font-bold text-lg" href="#">Videos</a></li>
+        <span>
+          <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+        </span>
+        <li><a class="text-white font-bold text-lg" href="#">Music</a></li>
+        <span>
+          <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+        </span>
+        <li><a class="text-white font-bold text-lg" href="#">Data</a></li>
+        <span>
+          <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+        </span>
+        <li><a class="text-white font-bold text-lg" href="#">Q&A</a></li>
+        <span>
+          <svg width="5" height="5" viewbox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5" fill="#726B6B"></circle></svg>
+        </span>
+        <li><a class="text-white font-bold text-lg" href="#">News</a></li>
+      </ul>
+    </div>
+    <div class="hidden lg:block"></div>
+  </nav>
+  <div :class="{ 'hidden': !mobileNavOpen, 'block': mobileNavOpen }" class="fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50 hidden">
+    <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-gray-800 opacity-80"></div>
+    <nav class="relative flex flex-col py-8 h-full w-full overflow-y-auto bg-black text-white">
+      <div class="flex items-center mb-16 pr-6">
+        <a class="ml-10 text-2xl text-gray-800 font-bold" href="#">
+          <img class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl rounded-xl hover:bg-gray-800" href="#">Home</a></li>
+          <li class="mb-1 px-10"><a class="hover:bg-blueGray-50 nav-hp block pl-8 py-4 text-xl rounded-xl hover:bg-gray-800" href="#">Videos</a></li>
+          <li class="mb-1 px-10"><a class="hover:bg-blueGray-50 nav-hp block pl-8 py-4 text-xl rounded-xl hover:bg-gray-800" href="#">Music</a></li>
+          <li class="mb-1 px-10"><a class="hover:bg-blueGray-50 nav-hp block pl-8 py-4 text-xl rounded-xl hover:bg-gray-800" href="#">Data</a></li>
+        </ul>
+      </div>
+      <div class="mt-auto px-10">
+        <div class="pt-6"></div>
+        <p class="mt-6 mb-4 text-lg text-center">
+          <span>2024 © Zavents. All rights reserved.</span>
+        </p>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="bg-gray-800 pt-20" x-data="{ mobileNavOpen: false }">
+  <nav class="relative"></nav>
+  <div class="relative container px-4 p-4 mx-auto">
+    <div class="flex-wrap items-center 2xl:mb-14 flex">
+      <div class="flex">
+        <!-- Thumbnails with scroll functionality -->
+        <div class="flex flex-col items-center space-y-4 mr-4 p-5">
+          <!-- Scroll up arrow -->
+          <div class="cursor-pointer text-blue-500 hover:text-blue-700" onclick="scrollThumbnails(-1)">▲</div>
+          <!-- Thumbnail container with scrolling -->
+          <div id="thumbnailContainer" class="flex flex-col space-y-4 overflow-hidden h-52">
+            <!-- Thumbnails -->
+            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_01.png" alt="Preview 1" onclick="changeMainImage(this)">
+            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_02.png" alt="Preview 2" onclick="changeMainImage(this)">
+            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_08.png" alt="Preview 3" onclick="changeMainImage(this)">
+            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2024/08/Shirakami-Fubuki_megane_07.png" alt="Preview 4" onclick="changeMainImage(this)">
+            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_06-1.png" alt="Preview 5" onclick="changeMainImage(this)">
+            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_05.png" alt="Preview 6" onclick="changeMainImage(this)">
+            <!-- Add more thumbnails as needed -->
+          </div>
+          <!-- Scroll down arrow -->
+          <div class="cursor-pointer text-blue-500 hover:text-blue-700" onclick="scrollThumbnails(1)">▼</div>
+        </div>
+        <!-- Main image on the right -->
+        <div class="lg:w-1/2 px-1 flex justify-center items-center w-full">
+          <img id="mainImage" class="fubuki fubuki-header " width="500px" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/Shirakami-Fubuki-pr-img-01-873x1440.png" alt="Main Image">
+        </div>
+      </div>
+      <!-- Swiper JS -->
+      <div class="lg:w-1/2 px-4 justify-center item-center w-full mb-16 lg:mb-0 pt-10">
+        <span class="text-lg font-bold text-blue-500">白上フブキ - Shirakami</span>
+        <h2 class="mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">“Good foxy day! I'm Shirakami Fubuki!”</h2>
+        <p class="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100">White-haired animal-eared otaku fox. She loves talking with people and will be happy if you give her the time of day. She aims to become a top otaku idol while enjoying each and every day.</p>
+        <a class="btn-hd inline-block text-lg text-black font-bold bg-blue-500 hover:bg-blue-600 transition duration-200 rounded-md py-2 hover:text-gray-800 px-10" href="#">Youtube</a><a class="px-16 btn-hd inline-block text-lg text-black font-bold bg-blue-500 hover:bg-blue-600 transition duration-200 rounded-md py-2 hover:text-gray-800 px-10" href="#">X</a>
+      </div>
+    </div>
+  </div>
+  <div :class="{ 'hidden': !mobileNavOpen, 'block': mobileNavOpen }" class="fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50 hidden">
+    <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-gray-800 opacity-80"></div>
+    <nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
+      <div class="flex items-center mb-16 pr-6">
+        <a class="ml-10 mr-auto text-2xl text-gray-800 font-bold" href="#">
+          <img class="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto">
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Product</a></li>
+          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Story</a></li>
+          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Features</a></li>
+          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="mt-auto px-10">
+        <div class="pt-6"><a class="block mb-4 py-4 px-12 text-gray-800 text-center font-bold border border-gray-50 hover:border-gray-100 rounded-full" href="#">Sign in</a><a class="block py-4 px-12 text-white text-center font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200" href="#">Sign up</a></div>
+        <p class="mt-6 mb-4 text-lg text-center">
+          <span>2021 © Zospace. All rights reserved.</span>
+        </p>
+      </div>
+    </nav>
+  </div>
+  <div class=""></div>
+  <div class=""></div>
+</section>
+
+
+
+<section class="2xl:py-40 bg-gray-800 p-4 pb-20" x-data="{ showContent: false }">
+  <div class="container px-4 mx-auto"></div>
+  <section x-data="{ category: 'all' }" class="relative overflow-hidden pb-20">
+    <div class="relative container mx-auto px-4 lg:px-28 p">
+      <img class="hidden md:block absolute top-0 left-0 -mt-10 animate-spinStar z-10" src="casper-assets/services/blink-star.png" alt="">
+      <div class="absolute top-0 left-0 mt-96 -ml-52 w-186 h-186 bg-gradient-to-t from-violet-700 via-darkBlue-900 to-transparent rounded-full filter blur-4xl"></div>
+      <div class="absolute top-0 right-0 w-186 h-186 mt-10 -mr-64 bg-gradient-to-t from-purple-600 via-darkBlue-900 to-transparent rounded-full filter blur-4xl"></div>
+      <div class="relative text-center mb-16">
+        <h2 class="heder mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">Videos</h2>
+        <p class="max-w-xl mx-auto text-xl leading-relaxed tracking-tight mb-12 text-gray-200">Some Video That Contains Fubuki in it (INNIT?!?!)</p>
+        <div class="inline-block max-w-max mx-auto p-2 md:p-1.5 rounded-3xl md:rounded-full bg-blue-500">
+          <div class="flex flex-col md:flex-row flex-nowrap items-center"><a x-on:click.prevent="category = 'all'" class="font-video-tab !text-black group inline-flex w-full sm:w-auto py-4 px-5 mb-2 md:mb-0 md:mr-2 items-center justify-center hover:text-gray-600 transition duration-150 rounded-full hover:bg-white font-bold" href="#">Holograffiti</a><a x-on:click.prevent="category = 'branding'" class="font-video-tab !text-black group inline-flex w-full sm:w-auto py-4 px-5 mb-2 md:mb-0 md:mr-2 items-center justify-center hover:text-gray-600 transition duration-150 rounded-full hover:bg-white font-bold" href="#">Assorted-Videos</a><a x-on:click.prevent="category = 'ui-design'" class="font-video-tab text-black !text-black group inline-flex w-full sm:w-auto py-4 px-5 mb-2 md:mb-0 md:mr-2 items-center justify-center hover:text-gray-600 transition duration-150 rounded-full hover:bg-white font-bold" href="#">MV</a></div>
+        </div>
+      </div>
+      <div x-show="category === 'all'" class="relative flex flex-wrap -mx-4">
+        <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+          <div class="relative flex items-end h-128 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50">
+            <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/7ekFy3-u6Qhd.jpg" alt="">
+            <a class="" href="#z">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="text-3xl font-medium mb-3 text-white">[Anime] See You!</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-96"></div>
+            </a>
+          </div>
+          <div class="relative flex items-end h-80 p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-pink-500/50">
+            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/ljZwKRVrMpshd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="text-3xl font-medium mb-3 text-white">[Anime] How to Invoke a Kaiju</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 h-72 opacity-0 group-hover:opacity-100 duration-300"></div>
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-blue-900/50">
+            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/Lz-GWtl8kL4hd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="text-3xl font-medium mb-3 text-white">[Anime] My Precious</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-56"></div>
+            </a>
+          </div>
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:scale-105 hover:shadow-2xl duration-300 hover:shadow-red-600/50 h-80">
+            <img class="absolute top-0 left-0 w-full object-cover h-full h-80" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/sVA-OqHElhQhd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="text-3xl font-medium mb-3 text-white">[Anime] Coming Back to Bite You</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-64"></div>
+            </a>
+          </div>
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl hover:scale-105 duration-300 hover:shadow-red-700/50">
+            <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/6-USMIYqVBchd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="font-medium mb-3 text-xl text-white">[Anime] Mother's Day - Expectation vs Reality</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-56"></div>
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/3 px-4">
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:scale-105 hover:shadow-2xl duration-300 hover:shadow-red-600/50 h-80">
+            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/5WWXbQhPoighd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="text-3xl font-medium mb-3 text-white">[Anime] Fubzilla vs. Pigeotaurus</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-64"></div>
+            </a>
+          </div>
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-slate-600/50 h-72">
+            <img class="absolute top-0 left-0 w-full h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/KlxrXa2WBUEhd.jpg" alt="">
+            <a class="" href="">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="font-medium mb-3 text-2xl text-white">[Anime] It's Been Five Years...</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-64"></div>
+            </a>
+          </div>
+          <div class="relative flex items-end h-48 p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-amber-950/50">
+            <img class="absolute top-0 left-0 w-full object-cover h-full object-center" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/gTfroqGDsEAhd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="font-medium mb-3 text-2xl text-white">[Anime] Hands on the Merchandise</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-44"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div x-show="category === 'branding'" class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
+        <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 pt-44">
+          <div class="relative flex items-end h-80 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-700/50">
+            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/xALJIWEXauQhd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="max-w-xs relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="font-medium mb-3 text-xl">[Drop Me Down] Is the God of Comedians Among Us? [#オチないと落ちない話]</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 h-72 opacity-0 group-hover:opacity-100 duration-300"></div>
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-2/3 px-4">
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-yellow-700/50">
+            <img class="absolute top-0 left-0 w-full h-full object-cover object-[10%]" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/QUJqK1VjcVQhd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                  <h4 class="text-3xl font-medium mb-3">[On Location Reward] We Went to the Nintendo Museum #ニンテンドーミュージアム行ってみた</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 h-72 opacity-0 group-hover:opacity-100 duration-300"></div>
+            </a>
+          </div>
+          <div class="relative flex items-end h-80 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-yellow-300/50">
+            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/C4ljn3YZft0hd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0 max-w-lg">
+                  <h4 class="text-3xl font-medium mb-3">[Crumbling] Food Report Definition, Broken [#食レポクイズ]</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 h-72 opacity-0 group-hover:opacity-100 duration-300"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div x-show="category === 'ui-design'" class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
+        <div class="w-full lg:w-2/3 px-4 mb-8 lg:mb-0">
+          <div class="relative flex items-end h-128 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-500/50">
+            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/UATaOzzxq-0hd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0 max-w-lg">
+                  <h4 class="text-3xl font-medium mb-3">[MV] We are GAMERS !!!! [Shirakami Fubuki, Ookami Mio, Nekomata Okayu, Inugami Korone]</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 h-72 opacity-0 group-hover:opacity-100 duration-300"></div>
+            </a>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-slate-300/50 h-60">
+            <img class="absolute top-0 left-0 w-full object-cover h-full object-bottom" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/pFgUluV-00shd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0 max-w-lg">
+                  <h4 class="text-3xl font-medium mb-3">Say!ファンファーレ!/白上フブキ【オリジナル曲】</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 h-72 opacity-0 group-hover:opacity-100 duration-300"></div>
+            </a>
+          </div>
+          <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 h-60 hover:shadow-gray-300/50">
+            <img class="absolute top-0 left-0 w-full object-cover h-72" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/SjACQutMV3Ahd.jpg" alt="">
+            <a class="" href="#">
+              <div class="relative">
+                <div class="flex mb-20 items-center justify-between">
+                  <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                </div>
+                <div class="relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0 max-w-lg">
+                  <h4 class="text-3xl font-medium mb-3">hololive 1st Generation - Secret Garden (Original)</h4>
+                </div>
+              </div>
+              <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 h-72 opacity-0 group-hover:opacity-100 duration-300"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+                
+<div class="container mx-auto talent_datya talent_data bg-gray-800 pb-20 p-4">
+  <div class="p-4">
+    <h2 class="text-center text-gray-100">DATA</h2>
+    <div class="table_box justify-center align-center">
+      <div class="left"><dl><dt>Birthday</dt><dd>October 5</dd></dl><dl><dt>Debut Stream</dt><dd>June 1, 2018</dd></dl><dl><dt>Height</dt><dd>155cm</dd></dl><dl><dt>Unit</dt><dd>hololive 1st Generation/Gamers</dd></dl><dl><dt>Illustrator</dt><dd><a href="https://twitter.com/lemon_mito" target="_blank">Nagishiro Mito</a></dd></dl><dl><dt>Fan Name</dt><dd>Sukonbu (Su-Corn)/Friends</dd></dl></div>
+      <div class="right">
+        <dl>
+          <dt>Hashtags</dt>
+          <dd>
+            Stream Tag: #フブキCh
+            <br>
+            Fan Art: #絵フブキ
+          </dd>
+        </dl>
+        <dl>
+          <dt>Dream</dt>
+          <dd>
+            To perform in lots of concerts with the other members!
+            <br>
+            Release my own solo album.
+            <br>
+            Get my own Nendoroid.
+            <br>
+            Get more MC Experience.
+            <br>
+            Enjoy many things with all of my fans!
+          </dd>
+        </dl>
+        <dl>
+          <dt>Snacks & Drinks During Streams</dt>
+          <dd>
+            I love tea! Especially green tea.
+            <br>
+            I also like black tea and orange juice.
+            <br>
+            For food, I snack on gummies and jerky.
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="qna" id="qna">
+  <h1 class="">Q & A</h1>
+  <h3>Q: Why is your fan mark a corn?</h3>
+  <p>A: Well, foxes make a “Kon Kon” sound when they bark. It sounds pretty similar to “corn”, doesn’t it? In other words, it’s elementary, my dear.</p>
+  <h3>Q: What kind of anime and manga do you like?</h3>
+  <p>A: I watch and read things that are recommended to me first before I decide, so I actually like anything. I hope everyone can tell me lots about their favorite things during my streams!</p>
+  <h3>Q: What are FAMS and the 3 Stooges group that you usually collab with?</h3>
+  <p>
+    A:FAMS refers to the 4 members who let loose when it comes to horsing around or doing crazy schemes; Shirakami Fubuki, Nakiri Ayame, Ookami Mio, and Oozora Subaru!
+    <br>
+    There’s also OKFAMS where Nekomata Okayu and Inugami Korone join us, and there’s also even SMOK and other groups! The 6 of us hang out together a lot, so we’re really close with each other. 3 Stooges was formed when the members who love SoundHorizon; me, Shiranui Flare, and Tsunomaki Watame were brought together. We just vibed with each other and got really close.
+    <br>
+    I also upload song covers that I sung with them. They’re really great at singing! We also do collab streams where we usually play horror games or watch movies together.
+    <br>
+    They tease me quite a lot, but that’s all part of the fun! They’re friends that I can collab with without worries!
+  </p>
+  <h3>Q: You sure you’re not a cat?</h3>
+  <p>
+    A: I’m a fox!
+    <br>
+    The cat jokes are fun when the viewers say “You’re a cat, ain’t ya!” when I do something cat-like or go “Nyaa!”
+    <br>
+    However, don’t take the cat jokes out of context! I’d be sad if you called me a cat out of the blue and would show my pro wrestling moves on you all!
+  </p>
+  <h3>Q: Who are Kurokami Fubuki and Vice-Manager Unicorn?</h3>
+  <p>
+    [Kurokami Fubuki]
+    <br>
+    Kuro-chan is an existence that’s like “another me”! We seem like the same person but are different people.
+    <br>
+    Her personality and speech are also completely different from mine.
+    <br>
+    Although she has a 3D body, she doesn’t have a 2D one, so she always appears in sprite form.
+    <br>
+    Her dream is to one day get her own 2D body.
+    <br>
+    Birthday: September 6
+    <br>
+    Favorite Drink: Cola
+    <br>
+    Favorite Food: Meat
+    <br>
+    <br>
+    <br>
+    Fan Name: Servants (Slaves)
+    <br>
+    [Vice-Manager Intelligence Unicorn]
+    <br>
+    Vice-Manager Unicorn is a corn that helps me out with stream related matters as well as give me advice for games.
+    <br>
+    Are they male? Female? There are a lot of theories floating around but they’re a corn, so they have no gender.
+    <br>
+    They sound more like a woman but they refer to themselves using “Boku.”
+    <br>
+    Favorite Drink: Fresh water
+  </p>
+  <h3>Q: Do you have any mascot characters?</h3>
+  <p>
+    Oruyanke, the bamboo shoot with fox ears.
+    <br>
+    Fubuchun, one of the GAMERS birds.
+    <br>
+    Miteiru, who’s always staring at you.
+    <br>
+    Fubzilla, who appeared in hologra.「フブラ」
+  </p>
+  <h3>Q: What are words that you often use in your streams?</h3>
+  <p class="text-white">
+    ▼Hajimanbou & Hajimanta
+    <br>
+    Greetings for when I start a stream!
+    <br>
+    <br>
+    ▼Ohakon, Hirukon, Yorukon
+    <br>
+    <br>
+    They’re greetings! There’s also “Good foxy day!”
+    <br>
+    ▼ Otsukon
+    <br>
+    Parting message at the end of the stream.
+    <br>
+    <br>
+    ▼ F & R.I.P.
+    <br>
+    Used when I get a Game Over in a game and such.
+    <br>
+    <br>
+    ▼ Hi, Friends!
+    <br>
+    My signature greeting!
+    <br>
+    If you call me “Wife”, I’ll reply “Friends”!
+    <br>
+    There’s even a hybrid, called “WIFriends”!
+    <br>
+    <br>
+    ▼~jai! or ~yanke!
+    <br>
+    Things I say out of habit.
+  </p>
+  <a href="https://marshmallow-qa.com/shirakamifubuki" class="hero-btn">Ask Her Anything!</a>
+</section>
+
+<section class="relative overflow-hidden bg-gray-800 " x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 6 }">
+  <div class="container px-4 mx-auto">
+    <div class="mb-12 md:mb-24 lg:ml-32">
+      <h2 class="font-heder max-w-2xl mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">News</h2>
+    </div>
+    <div class="flex flex-wrap lg:flex-nowrap -m-5 items-center">
+      <div class="flex-shrink-0 w-full lg:w-1/12 p-5">
+        <button x-on:click.prevent="activeSlide > 0 ? (activeSlide -= 1, slideWidth -= $refs['slide' + (activeSlide + 1)].offsetWidth) : null" class="relative z-10 inline-flex w-14 h-14 items-center justify-center bg-blue-500 hover:bg-blue-600 rounded-full text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-3 text-black color-black" width="7" height="13" viewbox="0 0 7 13" fill="none">
+            <path d="M6.84708 12.1077C7.05097 12.3133 7.05097 12.6436 6.84708 12.8476C6.64319 13.0517 6.31377 13.0525 6.10988 12.8476L0.152917 6.8708C-0.0509739 6.66673 -0.0509738 6.33645 0.152917 6.13087L6.10988 0.154027C6.31377 -0.0500387 6.64319 -0.0500386 6.84708 0.154027C7.05098 0.358848 7.05098 0.689887 6.84708 0.893952L1.4143 6.50121L6.84708 12.1077Z" fill="black"></path>
+          </svg>
+        </button>
+        <button x-on:click.prevent="activeSlide < slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="relative z-10 lg:hidden inline-flex ml-6 w-14 h-14 items-center justify-center bg-blue-500 hover:bg-blue-600 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-3" width="7" height="13" viewbox="0 0 7 13" fill="none">
+            <path d="M0.152917 0.894235C-0.0509742 0.688658 -0.0509742 0.358375 0.152917 0.15431C0.356808 -0.0497557 0.686228 -0.0505119 0.89012 0.15431L6.84708 6.13116C7.05097 6.33522 7.05097 6.6655 6.84708 6.87108L0.890119 12.8479C0.686227 13.052 0.356807 13.052 0.152916 12.8479C-0.0509753 12.6431 -0.0509753 12.3121 0.152916 12.108L5.5857 6.50074L0.152917 0.894235Z" fill="black"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="flex-shrink-0 w-full lg:w-5/6 p-5">
+        <div>
+          <div :style="'transform: translateX(-' + slideWidth + 'px)'" class="flex transition-transform duration-500 ease-in-out -m-16" style="transform: translateX(-0px)">
+            <div x-ref="slide1" class="flex-shrink-0 w-full p-16">
+              <div class="flex flex-wrap w-full -m-5">
+                <div class="w-full lg:w-2/2 p-5 pl-10">
+                  <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
+                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/animenyc-top-1-1440x1170.jpg" alt="">
+                    <a class="" href="https://hololive.hololivepro.com/en/news/20240726-01-91/">
+                      <div class="relative">
+                        <div class="flex mb-20 items-center justify-between">
+                          <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                        </div>
+                        <div class="max-w-3xl relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                          <h4 class="font-medium mb-3 text-white text-xl">2024.08.07</h4>
+                          <p class="text-sm font-white text-white">COVER Corporation Announces Details of hololive production at Anime NYC 2024</p>
+                        </div>
+                      </div>
+                      <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-full w-full"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div x-ref="slide2" class="flex-shrink-0 w-full p-16">
+              <div class="flex flex-wrap w-full -m-5">
+                <div class="w-full lg:w-2/2 p-5 pl-10">
+                  <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
+                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/GAMERStop00-1536x701.jpg" alt="">
+                    <a class="" href="#">
+                      <div class="relative">
+                        <div class="flex mb-20 items-center justify-between">
+                          <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                        </div>
+                        <div class="max-w-3xl relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                          <h4 class="font-medium mb-3 text-white text-xl">024.07.26</h4>
+                          <p class="text-sm font-white text-white">ANIPLUS x hololive GAMERS Collaboration Café Opens in Korea From August 15th, 2024</p>
+                        </div>
+                      </div>
+                      <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-full w-full"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div x-ref="slide3" class="flex-shrink-0 w-full p-16">
+              <div class="flex flex-wrap w-full -m-5">
+                <div class="w-full lg:w-2/2 p-5">
+                  <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
+                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/unnamed.jpg" alt="">
+                    <a class="" href="#">
+                      <div class="relative">
+                        <div class="flex mb-20 items-center justify-between">
+                          <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                        </div>
+                        <div class="max-w-3xl relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                          <h4 class="font-medium mb-3 text-white text-xl">2024.03.06</h4>
+                          <p class="text-sm font-white text-white">hololive GAMERS – hololive SUPER EXPO 2024 & hololive 5th fes. – Keycap Set is Now Available</p>
+                        </div>
+                      </div>
+                      <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-full w-full"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div x-ref="slide4" class="flex-shrink-0 w-full p-16">
+              <div class="flex flex-wrap w-full -m-5">
+                <div class="w-full lg:w-2/2 p-5">
+                  <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
+                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://hololive.hololivepro.com/wp-content/uploads/2023/08/20230802_en_main-1440x810.webp" alt="">
+                    <a class="" href="#">
+                      <div class="relative">
+                        <div class="flex mb-20 items-center justify-between">
+                          <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                        </div>
+                        <div class="max-w-3xl relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                          <h4 class="font-medium mb-3 text-white text-xl">2023.08.02</h4>
+                          <p class="text-sm font-white text-white">“Pre-World Championships Event! hololive Pokémon UNITE World Tournament!” to Be Held on August 10th, 2023</p>
+                        </div>
+                      </div>
+                      <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-full w-full"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div x-ref="slide5" class="flex-shrink-0 w-full p-16">
+              <div class="flex flex-wrap w-full -m-5">
+                <div class="w-full lg:w-2/2 p-5">
+                  <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
+                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://hololive.hololivepro.com/wp-content/uploads/2022/12/1202_EXPO2023_4thfes-TeaserKV_FullHD-RGB_fix_olmae-640x360.jpg" alt="">
+                    <a class="" href="#">
+                      <div class="relative">
+                        <div class="flex mb-20 items-center justify-between">
+                          <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                        </div>
+                        <div class="max-w-3xl relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                          <h4 class="font-medium mb-3 text-white text-xl">2022.12.02</h4>
+                          <p class="text-sm font-white text-white">hololive production’s 2nd All-Star Event, “hololive SUPER EXPO 2023” & “hololive 4th fes.” Taking Place in 2023!</p>
+                        </div>
+                      </div>
+                      <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-full w-full"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div x-ref="slide6" class="flex-shrink-0 w-full p-16">
+              <div class="flex flex-wrap w-full -m-5">
+                <div class="w-full lg:w-2/2 p-5">
+                  <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
+                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/amongus-banner-0920-small-640x360.jpg" alt="">
+                    <a class="" href="#">
+                      <div class="relative">
+                        <div class="flex mb-20 items-center justify-between">
+                          <span class="text-black group-hover:text-white transform group-hover:translate-x-1 group-hover:-translate-y-1 transition duration-100"></span>
+                        </div>
+                        <div class="max-w-3xl relative z-50 opacity-0 group-hover:opacity-100 duration-300 translate-y-5 group-hover:translate-y-0">
+                          <h4 class="font-medium mb-3 text-white text-xl">2022.09.21</h4>
+                          <p class="text-sm font-white text-white">hololive production x Among Us Collaboration Starts on Sept 20th, 2022</p>
+                        </div>
+                      </div>
+                      <div class="absolute z-10 bottom-0 bg-gradient-to-t from-black to-transparent w-full left-0 opacity-0 group-hover:opacity-100 duration-300 h-full w-full"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-shrink-0 hidden lg:block w-1/12 px-4">
+        <button x-on:click.prevent="activeSlide < slideCount - 1 ? (activeSlide += 1, slideWidth += $refs['slide' + activeSlide].offsetWidth) : activeSlide = slideCount - 1" class="relative z-10 inline-flex w-14 h-14 items-center justify-center bg-blue-500 hover:bg-blue-600 rounded-full text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-3 text-black" width="7" height="13" viewbox="0 0 7 13" fill="none">
+            <path d="M0.152917 0.894235C-0.0509742 0.688658 -0.0509742 0.358375 0.152917 0.15431C0.356808 -0.0497557 0.686228 -0.0505119 0.89012 0.15431L6.84708 6.13116C7.05097 6.33522 7.05097 6.6655 6.84708 6.87108L0.890119 12.8479C0.686227 13.052 0.356807 13.052 0.152916 12.8479C-0.0509753 12.6431 -0.0509753 12.3121 0.152916 12.108L5.5857 6.50074L0.152917 0.894235Z" fill="black"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="flex-shrink-0 hidden lg:blockx w-5/12 p-5">
+        <div class="pt-6 pb-14 h-full bg-white rounded-lg">
+          <div class="relative mb-8 h-52">
+            <a href="#">
+              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/5325708/pexels-photo-5325708.jpeg?q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=450&w=940" alt="">
+            </a>
+            <div class="absolute bottom-0 left-0 ml-8 mb-6 px-3 pb-3 pt-1 inline-block bg-white rounded-b-2xl border-t-4 border-blue-500">
+              <p class="text-xl font-bold">14</p>
+              <p class="text-xs uppercase text-gray-300">Feb</p>
+            </div>
+          </div>
+          <div class="px-14">
+            <div class="pt-6 border-t border-gray-100">
+              <a class="inline-block mb-6 text-lg font-bold" href="#">10 ways to keep your remote teams engaged</a>
+              <p class="text-lg text-gray-300">This morning, platea dictumst nec nunc in hac habitasse dignissim accumsan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-14 lg:mt-24 text-center"></div>
+  </div>
+</section>
+
+     <section class="2xl:py-40 bg-gray-800">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center py-5">
+      <a class="inline-block mb-20 text-white text-xl font-bold" href="#">
+        <img class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
+      </a>
+      <div class="flex justify-center">
+        <a class="flex justify-center items-center w-12 h-12 mr-4 bg-gray-600 rounded-full" href="#">
+          <svg class="h-4 w-4 text-white" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path d="M17.0064 3.181e-08H0.992752C0.444397 0.00027469 -0.000137297 0.445084 3.181e-08 0.993576V17.0072C0.00027469 17.5556 0.445084 18.0001 0.993576 18H17.0064C17.5551 18.0001 17.9999 17.5555 18 17.0068C18 17.0067 18 17.0066 18 17.0064V0.992752C17.9997 0.444397 17.5549 -0.000137297 17.0064 3.181e-08Z" fill="white"></path>
+              <path d="M12.4277 18.0001V11.0391H14.7744L15.126 8.31453H12.4277V6.57924C12.4277 5.79221 12.6462 5.25594 13.7748 5.25594H15.2051V2.82562C14.9562 2.79253 14.1025 2.71851 13.109 2.71851C11.0348 2.71851 9.61523 3.98413 9.61523 6.30939V8.31453H7.27734V11.0391H9.61523V18.0001H12.4277Z" fill="#2D2D33"></path>
+            </g>
+          </svg>
+        </a>
+        <a class="flex justify-center items-center w-12 h-12 mr-4 bg-gray-600 rounded-full" href="#">
+          <svg class="h-4 w-4 text-white" width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path d="M17.982 5.29205C17.9398 4.33564 17.7852 3.67812 17.5636 3.10836C17.3351 2.50359 16.9834 1.96213 16.5227 1.51201C16.0726 1.05489 15.5276 0.699691 14.9298 0.474702C14.3568 0.253147 13.7027 0.0984842 12.7463 0.0563159C11.7827 0.0105764 11.4768 0 9.03301 0C6.58917 0 6.28328 0.0105764 5.3233 0.0527447C4.36689 0.0949129 3.70937 0.249713 3.13975 0.471131C2.53484 0.699691 1.99338 1.05132 1.54326 1.51201C1.08614 1.96213 0.731078 2.50716 0.505952 3.10493C0.284397 3.67812 0.129734 4.33207 0.0875659 5.28848C0.0418264 6.25203 0.03125 6.55792 0.03125 9.00176C0.03125 11.4456 0.0418264 11.7515 0.0839947 12.7115C0.126163 13.6679 0.280963 14.3254 0.502518 14.8952C0.731078 15.4999 1.08614 16.0414 1.54326 16.4915C1.99338 16.9486 2.53841 17.3038 3.13618 17.5288C3.70937 17.7504 4.36332 17.905 5.31986 17.9472C6.27971 17.9895 6.58574 17.9999 9.02957 17.9999C11.4734 17.9999 11.7793 17.9895 12.7393 17.9472C13.6957 17.905 14.3532 17.7504 14.9228 17.5288C16.1325 17.0611 17.0889 16.1047 17.5566 14.8952C17.778 14.322 17.9328 13.6679 17.975 12.7115C18.0172 11.7515 18.0278 11.4456 18.0278 9.00176C18.0278 6.55792 18.0242 6.25203 17.982 5.29205ZM16.3611 12.6411C16.3223 13.5202 16.1747 13.9949 16.0516 14.3114C15.7492 15.0956 15.1268 15.7179 14.3426 16.0204C14.0262 16.1434 13.548 16.2911 12.6724 16.3297C11.723 16.372 11.4382 16.3824 9.03658 16.3824C6.63491 16.3824 6.3466 16.372 5.40063 16.3297C4.52155 16.2911 4.04685 16.1434 3.73038 16.0204C3.34015 15.8761 2.98495 15.6476 2.69664 15.3487C2.39775 15.0568 2.16919 14.7052 2.02497 14.315C1.9019 13.9985 1.75424 13.5202 1.71565 12.6447C1.67334 11.6953 1.6629 11.4104 1.6629 9.00876C1.6629 6.60709 1.67334 6.31878 1.71565 5.37295C1.75424 4.49387 1.9019 4.01917 2.02497 3.7027C2.16919 3.31234 2.39775 2.95727 2.70021 2.66883C2.99196 2.36994 3.34359 2.14138 3.73395 1.99729C4.05042 1.87422 4.52869 1.72656 5.4042 1.68783C6.3536 1.64566 6.63848 1.63508 9.04001 1.63508C11.4453 1.63508 11.73 1.64566 12.676 1.68783C13.555 1.72656 14.0297 1.87422 14.3462 1.99729C14.7364 2.14138 15.0916 2.36994 15.3799 2.66883C15.6788 2.96071 15.9074 3.31234 16.0516 3.7027C16.1747 4.01917 16.3223 4.49731 16.3611 5.37295C16.4032 6.32236 16.4138 6.60709 16.4138 9.00876C16.4138 11.4104 16.4032 11.6917 16.3611 12.6411Z" fill="white"></path>
+              <path d="M9.03411 4.37793C6.48135 4.37793 4.41016 6.44898 4.41016 9.00188C4.41016 11.5548 6.48135 13.6258 9.03411 13.6258C11.587 13.6258 13.6581 11.5548 13.6581 9.00188C13.6581 6.44898 11.587 4.37793 9.03411 4.37793ZM9.03411 12.0013C7.37801 12.0013 6.03467 10.6581 6.03467 9.00188C6.03467 7.34564 7.37801 6.00244 9.03411 6.00244C10.6903 6.00244 12.0335 7.34564 12.0335 9.00188C12.0335 10.6581 10.6903 12.0013 9.03411 12.0013Z" fill="white"></path>
+              <path d="M14.9208 4.1952C14.9208 4.79133 14.4375 5.27468 13.8412 5.27468C13.2451 5.27468 12.7617 4.79133 12.7617 4.1952C12.7617 3.59894 13.2451 3.11572 13.8412 3.11572C14.4375 3.11572 14.9208 3.59894 14.9208 4.1952Z" fill="white"></path>
+            </g>
+          </svg>
+        </a>
+        <a class="flex justify-center items-center w-12 h-12 bg-gray-600 rounded-full" href="#">
+          <svg class="w-4 h-4 text-white" width="18" height="16" viewbox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2.41887C17.3306 2.7125 16.6174 2.90712 15.8737 3.00162C16.6388 2.54487 17.2226 1.82712 17.4971 0.962C16.7839 1.38725 15.9964 1.68763 15.1571 1.85525C14.4799 1.13413 13.5146 0.6875 12.4616 0.6875C10.4186 0.6875 8.77387 2.34575 8.77387 4.37863C8.77387 4.67113 8.79862 4.95237 8.85938 5.22012C5.7915 5.0705 3.07687 3.60013 1.25325 1.36025C0.934875 1.91263 0.748125 2.54488 0.748125 3.2255C0.748125 4.5035 1.40625 5.63637 2.38725 6.29225C1.79437 6.281 1.21275 6.10888 0.72 5.83775C0.72 5.849 0.72 5.86363 0.72 5.87825C0.72 7.6715 1.99912 9.161 3.6765 9.50412C3.37612 9.58625 3.04875 9.62562 2.709 9.62562C2.47275 9.62562 2.23425 9.61213 2.01038 9.56262C2.4885 11.024 3.84525 12.0984 5.4585 12.1332C4.203 13.1154 2.60888 13.7071 0.883125 13.7071C0.5805 13.7071 0.29025 13.6936 0 13.6565C1.63462 14.7106 3.57188 15.3125 5.661 15.3125C12.4515 15.3125 16.164 9.6875 16.164 4.81175C16.164 4.64862 16.1584 4.49113 16.1505 4.33475C16.8829 3.815 17.4982 3.16587 18 2.41887Z" fill="white"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <p class="text-center text-lg text-white px-4 border-t border-gray-500 py-1">
+    <span>Created By Fans for Fans</span>
+  </p>
+</section>
+</body>
+</html>
+
