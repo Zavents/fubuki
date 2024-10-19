@@ -1,146 +1,147 @@
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap) not all;
-  @import url(https://unpkg.com/swiper/swiper-bundle.min.css) not all;
-    .qna h1,
-      .talent_data dd a,
-        i {
-          text-decoration-thickness: initial;
-          text-decoration-style: initial;
-          text-decoration-color: initial
-          }
-        .qna h3,
-          .qna p,
-            .talent_data dl {
-              text-align: left
-              }
-            body {
-              font-family: "Noto Sans JP","Yu Gothic",YuGothic,sans-serif
-              }
-            .fubuki-header {
-              position: relative;
-              border-radius: 1rem;
-              background-image: linear-gradient(135deg,#03476b 25%,rgba(160,160,160,.624) 25%,rgba(160,160,160,.624) 50%,#03476b 50%,#03476b 75%,rgba(160,160,160,.624) 75%,rgba(160,160,160,.624) 100%,#03476b 100%);
-              background-position-x: initial;
-              background-position-y: initial;
-              background-repeat: initial;
-              background-attachment: initial;
-              background-origin: initial;
-              background-clip: initial;
-              background-color: initial;
-              background-size: 1rem 1rem;
-              animation: 5s linear infinite pattern;
-              animation-timeline: auto;
-              animation-range-start: normal;
-              animation-range-end: normal
-              }
-            .img {
-              width: 200px
-              }
-            .talent_data {
-              padding: 80px 0
-              }
-            .talent_data .container {
-              max-width: 1000px
-              }
-            .talent_data h2 {
-              font-family: brandon-grotesque,sans-serif;
-              color: #d3d3d4;
-              font-size: 50px;
-              font-weight: 700;
-              line-height: 1.5em;
-              letter-spacing: .3em;
-                margin-bottom: 40px
-                }
-              .talent_data .table_box {
-                display: flex;
-                justify-content: space-between
-                }
-              .talent_data .left,
-                .talent_data .right {
-                  width: 49%
-                  }
-                .talent_data dl {
-                  display: table;
-                  width: 100%;
-                  color: #d3d3d4;
-                  font-weight: 700;
-                  border-bottom: 1px solid #d3d3d4
-                  }
-                .talent_data dd,
-                  .talent_data dt {
-                    display: table-cell;
-                    font-size: 16px;
-                    line-height: 1.5em;
-                    padding: 16px 20px
-                    }
-                  .talent_data dd {
-                    width: calc(100% - 10em)
-                    }
-                  .talent_data dt {
-                    width: 10em;
-                    position: relative
-                    }
-                  .talent_data dt::after {
-                    content: "";
-                    position: absolute;
-                    background-color: #d3d3d4;
-                    width: 1px;
-                    height: 15px;
-                    right: 0;
-                    bottom: -8px
-                    }
-                  .talent_data dd a {
-                    color: #d3d3d4;
-                    text-decoration-line: underline
-                    }
-                  .qna {
-                    background-image: linear-gradient(rgba(4,9,30,.7),#000),url("https://kusang.pages.dev/assets/img/qnabanner.jpg");
-                    width: 80%;
-                    background-position-x: center;
-                    background-position-y: center;
-                    background-size: cover;
-                    margin: 100px auto;
-                    border-radius: 10px;
-                    text-align: center;
-                    padding: 2%
-                    }
-                  .qna h1,
-                    i {
-                      font-size: 20px;
-                      color: #39abe0;
-                      text-decoration-line: none
-                      }
-                    .qna h3 {
-                      color: #fff
-                      }
-                    .qna p{
-                      color: #a5c1ce;
-                      }
-                    @media only screen and (max-width:768px) {
-                      .talent_data {
-                        padding: 20px 0 40px
-                        }
-                      .talent_data h2 {
-                        font-size: 30px;
-                        margin-bottom: 12px
-                        }
-                      .talent_data dd,
-                        .talent_data dt {
-                          font-size: 13px;
-                          line-height: 1.4em;
-                          padding: 12px
-                          }
-                        .talent_data dd {
-                          width: calc(100% - 8em)
-                          }
-                        .talent_data dt {
-                          width: 8em
-                          }
-                        .talent_data .table_box {
-                          display: block
-                          }
-                        .talent_data .left,
-                          .talent_data .right {
-                            width: 100%
-                            }
-                          }
+html {
+  scroll-behavior: smooth;
+}
+.qna h1,
+.talent_data dd a,
+i {
+text-decoration-thickness: initial;
+text-decoration-style: initial;
+text-decoration-color: initial
+}
+.qna h3,
+.qna p,
+.talent_data dl {
+text-align: left
+}
+body {
+font-family: "Noto Sans JP","Yu Gothic",YuGothic,sans-serif
+}
+.fubuki-header {
+position: relative;
+border-radius: 1rem;
+background-image: linear-gradient(135deg,#03476b 25%,rgba(160,160,160,.624) 25%,rgba(160,160,160,.624) 50%,#03476b 50%,#03476b 75%,rgba(160,160,160,.624) 75%,rgba(160,160,160,.624) 100%,#03476b 100%);
+background-position-x: initial;
+background-position-y: initial;
+background-repeat: initial;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: initial;
+background-size: 1rem 1rem;
+animation: 5s linear infinite pattern;
+animation-timeline: auto;
+animation-range-start: normal;
+animation-range-end: normal
+}
+.img {
+width: 200px
+}
+.talent_data {
+padding: 80px 0
+}
+.talent_data .container {
+max-width: 1000px
+}
+.talent_data h2 {
+font-family: brandon-grotesque,sans-serif;
+color: #d3d3d4;
+font-size: 50px;
+font-weight: 700;
+line-height: 1.5em;
+letter-spacing: .3em;
+margin-bottom: 40px
+}
+.talent_data .table_box {
+display: flex;
+justify-content: space-between
+}
+.talent_data .left,
+.talent_data .right {
+width: 49%
+}
+.talent_data dl {
+display: table;
+width: 100%;
+color: #d3d3d4;
+font-weight: 700;
+border-bottom: 1px solid #d3d3d4
+}
+.talent_data dd,
+.talent_data dt {
+display: table-cell;
+font-size: 16px;
+line-height: 1.5em;
+padding: 16px 20px
+}
+.talent_data dd {
+width: calc(100% - 10em)
+}
+.talent_data dt {
+width: 10em;
+position: relative
+}
+.talent_data dt::after {
+content: "";
+position: absolute;
+background-color: #d3d3d4;
+width: 1px;
+height: 15px;
+right: 0;
+bottom: -8px
+}
+.talent_data dd a {
+color: #d3d3d4;
+text-decoration-line: underline
+}
+.qna {
+background-image: linear-gradient(rgba(4,9,30,.7),#000),url("https://kusang.pages.dev/assets/img/qnabanner.jpg");
+width: 80%;
+background-position-x: center;
+background-position-y: center;
+background-size: cover;
+margin: 100px auto;
+border-radius: 10px;
+text-align: center;
+padding: 2%
+}
+.qna h1,
+i {
+font-size: 20px;
+color: #39abe0;
+text-decoration-line: none
+}
+.qna h3 {
+color: #fff
+}
+.qna p{
+color: #a5c1ce;
+}
+@media only screen and (max-width:768px) {
+.talent_data {
+padding: 20px 0 40px
+}
+.talent_data h2 {
+font-size: 30px;
+margin-bottom: 12px
+}
+.talent_data dd,
+.talent_data dt {
+font-size: 13px;
+line-height: 1.4em;
+padding: 12px
+}
+.talent_data dd {
+width: calc(100% - 8em)
+}
+.talent_data dt {
+width: 8em
+}
+.talent_data .table_box {
+display: block
+}
+.talent_data .left,
+.talent_data .right {
+width: 100%
+}
+}
 
