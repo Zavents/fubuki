@@ -20,10 +20,10 @@
 <body class="antialiased bg-body text-body font-body">
   <div class="">
           
-<section class="px-4 lg:px-10 bg-gray-800 " x-data="{ mobileNavOpen: false }">
+<section class="px-4 lg:px-10 bg-gray-800  " x-data="{ mobileNavOpen: false }">
   <nav class="relative flex justify-between items-center py-5">
     <a class="text-2xl text-white font-bold" href="#">
-      <img class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
+      <img loading="lazy" decoding="async" class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
     </a>
     <div class="lg:hidden">
       <button class="p-2" x-on:click="mobileNavOpen = !mobileNavOpen">
@@ -62,7 +62,7 @@
     <nav class="relative flex flex-col py-8 h-full w-full overflow-y-auto bg-black text-white">
       <div class="flex items-center mb-16 pr-6">
         <a class="ml-10 text-2xl text-gray-800 font-bold" href="#">
-          <img class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
+          <img loading="lazy" decoding="async" class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
         </a>
       </div>
       <div>
@@ -83,38 +83,55 @@
   </div>
 </section>
 
-<section class="bg-gray-800 pt-20" x-data="{ mobileNavOpen: false }">
+<section class="bg-gray-800 pt-20 min-h-screen" x-data="{ mobileNavOpen: false }">
   <nav class="relative"></nav>
   <div class="relative container px-4 p-4 mx-auto">
     <div class="flex-wrap items-center 2xl:mb-14 flex">
       <div class="flex">
-        <!-- Thumbnails with scroll functionality -->
         <div class="flex flex-col items-center space-y-4 mr-4 p-5">
           <!-- Scroll up arrow -->
           <div class="cursor-pointer text-blue-500 hover:text-blue-700" onclick="scrollThumbnails(-1)">▲</div>
           <!-- Thumbnail container with scrolling -->
           <div id="thumbnailContainer" class="flex flex-col space-y-4 overflow-hidden h-52">
             <!-- Thumbnails -->
-            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_01.png" alt="Preview 1" onclick="changeMainImage(this)">
-            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_02.png" alt="Preview 2" onclick="changeMainImage(this)">
-            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_08.png" alt="Preview 3" onclick="changeMainImage(this)">
-            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2024/08/Shirakami-Fubuki_megane_07.png" alt="Preview 4" onclick="changeMainImage(this)">
-            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_06-1.png" alt="Preview 5" onclick="changeMainImage(this)">
-            <img class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" src="https://hololive.hololivepro.com/wp-content/uploads/2020/06/Shirakami-Fubuki_megane_05.png" alt="Preview 6" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_01.png" alt="Preview 1" 
+            data-main-src="./public/images/Shirakami-fubuki-header_01.png" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_02.png" alt="Preview 2" 
+            data-main-src="./public/images/Shirakami-fubuki-header_02.png" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_03.png" alt="Preview 3" 
+            data-main-src="./public/images/Shirakami-fubuki-header_03.png" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_04.png" alt="Preview 4" 
+            data-main-src="public/images/Shirakami-fubuki-header_04.png" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_05.png" alt="Preview 5" 
+            data-main-src="./public/images/Shirakami-fubuki-header_05.png" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_06.png" alt="Preview 6" 
+            data-main-src="./public/images/Shirakami-fubuki-header_06.png" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_07.png" alt="Preview 7" 
+            data-main-src="./public/images/Shirakami-fubuki-header_07.png" onclick="changeMainImage(this)">
+            <img loading="lazy" decoding="async" class="w-12 cursor-pointer border-2 border-transparent hover:border-blue-400" 
+            src="./public/images/Shirakami-Fubuki-thumb_08.png" alt="Preview 8" 
+            data-main-src="./public/images/Shirakami-fubuki-header_08.png" onclick="changeMainImage(this)">
             <!-- Add more thumbnails as needed -->
           </div>
           <!-- Scroll down arrow -->
           <div class="cursor-pointer text-blue-500 hover:text-blue-700" onclick="scrollThumbnails(1)">▼</div>
         </div>
         <!-- Main image on the right -->
-        <div class="lg:w-1/2 px-1 flex justify-center items-center w-full">
-          <img id="mainImage" class="fubuki fubuki-header " width="500px" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/Shirakami-Fubuki-pr-img-01-873x1440.png" alt="Main Image">
+        <div class="lg:w-1/2 px-1 flex justify-center items-center w-full h-20">
+          <img loading="lazy" decoding="async" id="mainImage" class="fubuki fubuki-header " width="500px" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/Shirakami-Fubuki-pr-img-01-873x1440.png" alt="Main Image">
         </div>
       </div>
       <!-- Swiper JS -->
       <div class="lg:w-1/2 px-4 justify-center item-center w-full mb-16 lg:mb-0 pt-10">
         <span class="text-lg font-bold text-blue-500">白上フブキ - Shirakami</span>
-        <h2 class="mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">“Good foxy day! I'm Shirakami Fubuki!”</h2>
+        <h2 class="mt-12 mb-12 text-3xl 2xl text-white font-bold font-heading">“Good foxy day! I'm Shirakami Fubuki!”</h2>
         <p class="mb-12 lg:mb-16 2xl:mb-24 text-xl text-gray-100">White-haired animal-eared otaku fox. She loves talking with people and will be happy if you give her the time of day. She aims to become a top otaku idol while enjoying each and every day.</p>
         <a class="btn-hd inline-block text-lg text-black font-bold bg-blue-500 hover:bg-blue-600 transition duration-200 rounded-md py-2 hover:text-gray-800 px-10" href="#">Youtube</a><a class="px-16 btn-hd inline-block text-lg text-black font-bold bg-blue-500 hover:bg-blue-600 transition duration-200 rounded-md py-2 hover:text-gray-800 px-10" href="#">X</a>
       </div>
@@ -125,7 +142,7 @@
     <nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
       <div class="flex items-center mb-16 pr-6">
         <a class="ml-10 mr-auto text-2xl text-gray-800 font-bold" href="#">
-          <img class="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto">
+          <img loading="lazy" decoding="async" class="h-7" src="zospace-assets/logos/zospace-dark-logo.svg" alt="" width="auto">
         </a>
       </div>
       <div>
@@ -147,14 +164,28 @@
   <div class=""></div>
   <div class=""></div>
 </section>
+<script>
+  function scrollThumbnails(direction) {
+    const container = document.getElementById('thumbnailContainer');
+    const scrollAmount = 80; // Adjust the scroll amount based on thumbnail size + margin
+    container.scrollBy({
+      top: direction * scrollAmount,
+      behavior: 'smooth' // Smooth scrolling effect
+    });
+  }
+  
+  function changeMainImage(thumb) {
+    const mainImage = document.getElementById('mainImage');
+    mainImage.src = thumb.getAttribute('data-main-src'); // Change the main image source to the data-main-src attribute
+  }
+  
+</script>
 
-
-
-<section class="2xl:py-40 bg-gray-800 p-4 pb-20" x-data="{ showContent: false }">
+<section class="2xl:py-40 bg-gray-800 p-4 pb-20 min-h-screen" x-data="{ showContent: false }">
   <div class="container px-4 mx-auto"></div>
   <section x-data="{ category: 'all' }" class="relative overflow-hidden pb-20">
     <div class="relative container mx-auto px-4 lg:px-28 p">
-      <img class="hidden md:block absolute top-0 left-0 -mt-10 animate-spinStar z-10" src="casper-assets/services/blink-star.png" alt="">
+      <img loading="lazy" decoding="async" class="hidden md:block absolute top-0 left-0 -mt-10 animate-spinStar z-10" src="casper-assets/services/blink-star.png" alt="">
       <div class="absolute top-0 left-0 mt-96 -ml-52 w-186 h-186 bg-gradient-to-t from-violet-700 via-darkBlue-900 to-transparent rounded-full filter blur-4xl"></div>
       <div class="absolute top-0 right-0 w-186 h-186 mt-10 -mr-64 bg-gradient-to-t from-purple-600 via-darkBlue-900 to-transparent rounded-full filter blur-4xl"></div>
       <div class="relative text-center mb-16">
@@ -167,7 +198,7 @@
       <div x-show="category === 'all'" class="relative flex flex-wrap -mx-4">
         <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
           <div class="relative flex items-end h-128 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50">
-            <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/7ekFy3-u6Qhd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/7ekFy3-u6Qhd.jpg" alt="">
             <a class="" href="#z">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -181,7 +212,7 @@
             </a>
           </div>
           <div class="relative flex items-end h-80 p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-pink-500/50">
-            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/ljZwKRVrMpshd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/ljZwKRVrMpshd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -197,7 +228,7 @@
         </div>
         <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-blue-900/50">
-            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/Lz-GWtl8kL4hd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/Lz-GWtl8kL4hd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -211,7 +242,7 @@
             </a>
           </div>
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:scale-105 hover:shadow-2xl duration-300 hover:shadow-red-600/50 h-80">
-            <img class="absolute top-0 left-0 w-full object-cover h-full h-80" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/sVA-OqHElhQhd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full h-80" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/sVA-OqHElhQhd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -225,7 +256,7 @@
             </a>
           </div>
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl hover:scale-105 duration-300 hover:shadow-red-700/50">
-            <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/6-USMIYqVBchd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/6-USMIYqVBchd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -241,7 +272,7 @@
         </div>
         <div class="w-full lg:w-1/3 px-4">
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:scale-105 hover:shadow-2xl duration-300 hover:shadow-red-600/50 h-80">
-            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/5WWXbQhPoighd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/5WWXbQhPoighd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -255,7 +286,7 @@
             </a>
           </div>
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-slate-600/50 h-72">
-            <img class="absolute top-0 left-0 w-full h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/KlxrXa2WBUEhd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/KlxrXa2WBUEhd.jpg" alt="">
             <a class="" href="">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -269,7 +300,7 @@
             </a>
           </div>
           <div class="relative flex items-end h-48 p-6 mb-8 rounded-3xl overflow-hidden group hover:shadow-2xl duration-300 hover:scale-105 hover:shadow-amber-950/50">
-            <img class="absolute top-0 left-0 w-full object-cover h-full object-center" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/gTfroqGDsEAhd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full object-center" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/gTfroqGDsEAhd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -287,7 +318,7 @@
       <div x-show="category === 'branding'" class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
         <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0 pt-44">
           <div class="relative flex items-end h-80 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-700/50">
-            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/xALJIWEXauQhd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/xALJIWEXauQhd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -303,7 +334,7 @@
         </div>
         <div class="w-full lg:w-2/3 px-4">
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-yellow-700/50">
-            <img class="absolute top-0 left-0 w-full h-full object-cover object-[10%]" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/QUJqK1VjcVQhd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover object-[10%]" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/QUJqK1VjcVQhd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -317,7 +348,7 @@
             </a>
           </div>
           <div class="relative flex items-end h-80 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-yellow-300/50">
-            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/C4ljn3YZft0hd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/C4ljn3YZft0hd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -335,7 +366,7 @@
       <div x-show="category === 'ui-design'" class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
         <div class="w-full lg:w-2/3 px-4 mb-8 lg:mb-0">
           <div class="relative flex items-end h-128 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-purple-500/50">
-            <img class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/UATaOzzxq-0hd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/UATaOzzxq-0hd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -351,7 +382,7 @@
         </div>
         <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-slate-300/50 h-60">
-            <img class="absolute top-0 left-0 w-full object-cover h-full object-bottom" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/pFgUluV-00shd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-full object-bottom" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/pFgUluV-00shd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -365,7 +396,7 @@
             </a>
           </div>
           <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 h-60 hover:shadow-gray-300/50">
-            <img class="absolute top-0 left-0 w-full object-cover h-72" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/SjACQutMV3Ahd.jpg" alt="">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full object-cover h-72" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/SjACQutMV3Ahd.jpg" alt="">
             <a class="" href="#">
               <div class="relative">
                 <div class="flex mb-20 items-center justify-between">
@@ -384,7 +415,7 @@
   </section>
 </section>
                 
-<div class="container mx-auto talent_datya talent_data bg-gray-800 pb-20 p-4">
+<div class="container mx-auto  talent_data bg-gray-800 pb-20 p-4 min-h-screen">
   <div class="p-4">
     <h2 class="text-center text-gray-100">DATA</h2>
     <div class="table_box justify-center align-center">
@@ -530,7 +561,7 @@
   <a href="https://marshmallow-qa.com/shirakamifubuki" class="hero-btn">Ask Her Anything!</a>
 </section>
 
-<section class="relative overflow-hidden bg-gray-800 " x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 6 }">
+<section class="relative overflow-hidden bg-gray-800 min-h-screen " x-data="{ slideWidth: 0, activeSlide: 0, slideCount: 6 }">
   <div class="container px-4 mx-auto">
     <div class="mb-12 md:mb-24 lg:ml-32">
       <h2 class="font-heder max-w-2xl mt-12 mb-12 text-6xl 2xl:text-8xl text-white font-bold font-heading">News</h2>
@@ -555,7 +586,7 @@
               <div class="flex flex-wrap w-full -m-5">
                 <div class="w-full lg:w-2/2 p-5 pl-10">
                   <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/animenyc-top-1-1440x1170.jpg" alt="">
+                    <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/animenyc-top-1-1440x1170.jpg" alt="">
                     <a class="" href="https://hololive.hololivepro.com/en/news/20240726-01-91/">
                       <div class="relative">
                         <div class="flex mb-20 items-center justify-between">
@@ -576,7 +607,7 @@
               <div class="flex flex-wrap w-full -m-5">
                 <div class="w-full lg:w-2/2 p-5 pl-10">
                   <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/GAMERStop00-1536x701.jpg" alt="">
+                    <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/GAMERStop00-1536x701.jpg" alt="">
                     <a class="" href="#">
                       <div class="relative">
                         <div class="flex mb-20 items-center justify-between">
@@ -597,7 +628,7 @@
               <div class="flex flex-wrap w-full -m-5">
                 <div class="w-full lg:w-2/2 p-5">
                   <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/unnamed.jpg" alt="">
+                    <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/unnamed.jpg" alt="">
                     <a class="" href="#">
                       <div class="relative">
                         <div class="flex mb-20 items-center justify-between">
@@ -618,7 +649,7 @@
               <div class="flex flex-wrap w-full -m-5">
                 <div class="w-full lg:w-2/2 p-5">
                   <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://hololive.hololivepro.com/wp-content/uploads/2023/08/20230802_en_main-1440x810.webp" alt="">
+                    <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://hololive.hololivepro.com/wp-content/uploads/2023/08/20230802_en_main-1440x810.webp" alt="">
                     <a class="" href="#">
                       <div class="relative">
                         <div class="flex mb-20 items-center justify-between">
@@ -639,7 +670,7 @@
               <div class="flex flex-wrap w-full -m-5">
                 <div class="w-full lg:w-2/2 p-5">
                   <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://hololive.hololivepro.com/wp-content/uploads/2022/12/1202_EXPO2023_4thfes-TeaserKV_FullHD-RGB_fix_olmae-640x360.jpg" alt="">
+                    <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://hololive.hololivepro.com/wp-content/uploads/2022/12/1202_EXPO2023_4thfes-TeaserKV_FullHD-RGB_fix_olmae-640x360.jpg" alt="">
                     <a class="" href="#">
                       <div class="relative">
                         <div class="flex mb-20 items-center justify-between">
@@ -660,7 +691,7 @@
               <div class="flex flex-wrap w-full -m-5">
                 <div class="w-full lg:w-2/2 p-5">
                   <div class="relative flex items-end p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-blue-800/50 h-72">
-                    <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/amongus-banner-0920-small-640x360.jpg" alt="">
+                    <img loading="lazy" decoding="async" class="absolute top-0 left-0 w-full h-full object-cover" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/amongus-banner-0920-small-640x360.jpg" alt="">
                     <a class="" href="#">
                       <div class="relative">
                         <div class="flex mb-20 items-center justify-between">
@@ -691,7 +722,7 @@
         <div class="pt-6 pb-14 h-full bg-white rounded-lg">
           <div class="relative mb-8 h-52">
             <a href="#">
-              <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/5325708/pexels-photo-5325708.jpeg?q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=450&w=940" alt="">
+              <img loading="lazy" decoding="async" class="w-full h-full object-cover" src="https://images.pexels.com/photos/5325708/pexels-photo-5325708.jpeg?q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=450&w=940" alt="">
             </a>
             <div class="absolute bottom-0 left-0 ml-8 mb-6 px-3 pb-3 pt-1 inline-block bg-white rounded-b-2xl border-t-4 border-blue-500">
               <p class="text-xl font-bold">14</p>
@@ -711,11 +742,11 @@
   </div>
 </section>
 
-     <section class="2xl:py-40 bg-gray-800">
+     <section class="2xl:py-40 bg-gray-800 ">
   <div class="container mx-auto px-4">
     <div class="max-w-4xl mx-auto text-center py-5">
       <a class="inline-block mb-20 text-white text-xl font-bold" href="#">
-        <img class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
+        <img loading="lazy" decoding="async" class="h-7" src="https://static.shuffle.dev/uploads/files/7c/7c0e753ba8d7b4d11451fc889bd1e8a92393fb70/shirakami-fubuki-new-model-reveal-removebg-preview.png" alt="" width="auto">
       </a>
       <div class="flex justify-center">
         <a class="flex justify-center items-center w-12 h-12 mr-4 bg-gray-600 rounded-full" href="#">
