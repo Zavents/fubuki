@@ -558,10 +558,8 @@ module.exports = {
         }
     },
     "content": [
-        ".\/src\/pug\/*.pug",
-        ".\/src\/html\/*.html",
-        ".\/src\/pages\/*.js",
-        ".\/src\/components\/*\/*.js"
+        './**/*.html', 
+        './src/**/*.{js,ts,jsx,tsx}'
     ],
     "plugins": []
 };
